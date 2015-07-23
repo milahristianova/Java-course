@@ -1,0 +1,13 @@
+
+public class Zadacha7 {
+
+	public static void main(String[] args) {
+    String x = "AKQJ" ; 
+    switch(x)
+    {
+    
+    }
+
+	}
+
+}

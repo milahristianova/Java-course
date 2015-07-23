@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Zadacha3 {
+
+	public static void main(String[] args) {
+	
+		Scanner scanner = new Scanner(System.in);
+		 int x = 20;
+		 int y = 30;
+		 int z = 40;
+		 
+		 if (x < y){
+			if (y < z){
+				System.out.println("Z is the biggest number");
+			}
+		 }
+	}
+
+}
