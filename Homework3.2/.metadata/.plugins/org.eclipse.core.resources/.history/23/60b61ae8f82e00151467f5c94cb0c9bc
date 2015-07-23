@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class Zadacha6 {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter five numbers : ");
+		int min;
+		int max;
+		int num;
+		if(scanner.hasNextInt()){ 
+			min=max
+		}
+		while (scanner.hasNextInt());
+		{
+			num=scanner.nextInt();
+			if(num > max)
+				max=num;
+			if(num < min)
+				min = num;
+		}
+		System.out.println("The max number is :" + max);
+		System.out.println("The min number is :" + min);
+		
+				
+		
+	
+		
+		}
+		 
+	}
+   		
+}
+
+	
