@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Zadacha_uprajnenie2 {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter a number:");
+		int k = scanner.nextInt();
+		sum(k);
+		
+		System.out.println(sum(k));
+	}
+	public static int sum(int k){
+		if(k>0){
+			return k+sum(k-1);
+		}else{
+			return 0;
+			
+		}
+		
+		
+		
+	}
+
+}
