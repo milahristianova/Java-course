@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Zadacha8 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		int n = input.nextInt();
+		int sum = 0;
+		do
+		{
+			n = 1; sum +=n;
+		
+			System.out.println("The sum is : ")	;
+			
+			}while (n!= 0);
+				
+		
+		
+		}
+		
+
+
+
+		
+			
+		}
+
+	
+

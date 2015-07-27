@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Zadacha9 {
+
+	public static void main(String[] args) {
+	
+		Scanner sc = new Scanner(System.in, "UTF-8");
+        String line = null;
+        int min = 0, max = 0, temp = 0;
+       
+        System.out.print("Enter the numbers: ");
+        line = sc.nextLine();
+        sc.close();
+        sc = new Scanner(line);
+        min = sc.nextInt();
+        max = min;
+       
+        while (sc.hasNextInt()) {
+                temp = sc.nextInt();
+                if (temp < min) {
+                        min = temp;
+                }
+                if (temp > max) {
+                        max = temp;
+                }
+        }
+       
+        System.out.println("Min: " + min + "\nMax: " + max);
+        sc.close();
+	}
+
+}

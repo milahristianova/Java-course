@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class Zadacha1 {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		int n = scanner.nextInt();
+		if (n >=1 && n <=5)
+		{
+		if (n %2 == 0)
+			
+		
+		System.out.println("The number is even");
+		System.out.println("The number is odd");
+		}
+		else if (n >= 6 && n <= 15);
+		{
+		 if (n%3 == 0)
+		
+		{
+			System.out.println("The number is possitive");
+		}
+			else if(n < 0)
+			System.out.println("The number is negative");
+			else
+				System.out.println("The number is zero");
+		
+
+			
+		}
+		
+		
+		
+	
+
+	}
+
+}

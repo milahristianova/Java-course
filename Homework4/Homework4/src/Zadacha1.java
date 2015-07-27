@@ -1,0 +1,26 @@
+
+public class Zadacha1 {
+
+	public static void main(String[] args) {
+		int array[] = { 3, 6, 9, 12, 18, 21, 35, 44, 51, 66};
+		int sum = 0;
+		
+		for (int i = 0; i < array.length; i++){
+		
+			if(array[i] %2 == 0){
+				sum += array[i];
+				
+			}
+		}
+		System.out.println("Array: ");
+		for (int i = 0; i < array.length; i++){
+			System.out.print(array[i] + " ");
+		}
+			System.out.println();
+			System.out.println("Sum = " + sum);
+			
+		}
+		}
+	
+
+
