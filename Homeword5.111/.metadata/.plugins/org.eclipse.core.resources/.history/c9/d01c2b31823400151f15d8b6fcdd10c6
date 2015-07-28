@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Zadacha7 {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter a number: ");
+		int a = scanner.nextInt();
+		StringBuilder Permutation = new StringBuilder();
+		
+		for (int i = 1; i<=a; i++){
+			Permutation.append(i);
+		}
+		public static void Permutation(String string1, String string2){
+			if(string1.length() == 0){
+				System.out.print(string1);
+			}else{
+				for(int i = 0, i< string1.length(); i++){
+					Permutation(string1 + string2.charAt(i))
+				}
+			}
+		}
+	}
+
+}
