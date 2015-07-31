@@ -1,0 +1,20 @@
+package Stock;
+
+public class Fruit extends Stock{
+	String bio;
+	int number;
+	
+	public Fruit(){
+		super();
+		this.bio = "";
+		this.number = 0;
+	}
+	
+	public Fruit(int price, boolean available, String bio, int number){
+		super(price, available);
+		this.bio = bio;
+		this.number = number;
+		
+	}
+
+}

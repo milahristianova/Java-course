@@ -1,0 +1,26 @@
+
+public class Meat extends Stock{ 
+	String name;
+	String type;
+	static int counter = 0;
+	
+	public Meat(){
+		this.name = "";
+		this.type = "";
+	}
+	public Meat(String name,String type){
+		this.name = name;
+		this.type = type;
+		counter++;
+	}
+	void Avaible(){
+		System.out.println(counter);
+	}
+	void Sell(){
+		counter = 0;
+		
+
+	
+	}
+
+}

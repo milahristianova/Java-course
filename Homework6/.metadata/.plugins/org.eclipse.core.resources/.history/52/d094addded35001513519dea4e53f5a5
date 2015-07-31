@@ -1,0 +1,20 @@
+
+public class Meat extends Stock{ 
+	String name;
+	int proteins;
+	
+	public Meat(){
+	super();
+	this.name = "";
+	this.proteins = 0;
+	}
+	public Meat(int price, boolean available, String name, int protein){
+		super(price,available);
+		this.name = name;
+		this.proteins = proteins;
+		
+
+	
+	}
+
+}

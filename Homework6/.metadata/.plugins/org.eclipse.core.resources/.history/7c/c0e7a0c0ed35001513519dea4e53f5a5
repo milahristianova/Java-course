@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Cat_10 {
+
+public static void main(String[] args){
+	Scanner scanner = new Scanner(System.in);
+	String name;
+	 int years;
+	 Cat[] array = new Cat[10];
+	 for(int i = 0; i<10; i++){
+		 
+		 System.out.println("Enter name:");
+		 name = scanner.nextLine();
+		 System.out.println("Enter years: ");
+		 years = scanner.nextInt();
+		 scanner.nextLine();
+		 array[i] = new Cat(name, years);
+	 }
+	 for(int j=0; j<10; j++){
+		 array[j].Say();
+	 }
+	 
+		 
+	 }
+			 
+
+	}
+
+

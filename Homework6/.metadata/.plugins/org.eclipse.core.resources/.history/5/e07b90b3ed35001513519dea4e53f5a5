@@ -1,0 +1,28 @@
+
+public class Deserts extends Stock {
+	String name;
+	String type;
+	static int counter = 0;
+	
+	public Deserts(){
+		this.name = "";
+		this.type = "";
+	}
+	public Deserts(String name, String type){
+		this.name = name;
+		this.type = type;
+		counter++;
+	}
+	void Avaible(){
+		System.out.println(counter);
+	}
+	void Sell(){
+		counter=0;
+		
+	
+
+
+
+	}
+
+}

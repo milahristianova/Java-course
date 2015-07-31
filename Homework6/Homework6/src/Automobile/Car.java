@@ -1,0 +1,16 @@
+package Automobile;
+
+public class Car {
+
+	public double price;
+	public Car(){
+		this.price = 0;
+	}
+	void Car_1(double price_1){
+		price = price_1;
+	}
+	void print(){
+		System.out.println(price);
+	}
+
+}

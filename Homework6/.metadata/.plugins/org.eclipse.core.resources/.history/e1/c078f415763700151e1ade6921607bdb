@@ -1,0 +1,22 @@
+package Employee;
+
+public class Policeman extends Employee{
+
+	
+	String rang;
+	public Policeman(){
+		rang = "";
+	}
+	public Policeman(String rang){
+		this.rang = rang;
+	}
+	void setRang(String rang){
+		this.rang = rang;
+	}
+	void Print(){
+		System.out.println(rang);
+		
+		}
+	}
+
+

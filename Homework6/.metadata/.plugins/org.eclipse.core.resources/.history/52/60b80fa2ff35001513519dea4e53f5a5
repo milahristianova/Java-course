@@ -1,0 +1,31 @@
+
+public class Doctor extends Employee {
+	
+	
+	
+	int nights;
+	int days;
+	
+	public Doctor(){
+		nights = 0;
+		days = 0;
+	}
+	public Doctor(int nights, int days){
+		this.nights = nights;
+		this.days = days;
+	}
+	void setNights(int nights){
+		this.nights = nights;
+	}
+	void setDays(int days){
+		this.days = days;
+	}
+	void Print(){
+		System.out.println(nights);
+		System.out.println(days);
+
+
+
+	}
+
+}

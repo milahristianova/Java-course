@@ -1,0 +1,29 @@
+package Employee;
+
+public class Employee {
+
+	
+		int hours;
+		int salary;
+		
+		public Employee(){
+			hours = 0;
+			salary = 0;
+		}
+		public Employee(int hours, int salary){
+			this.hours = hours;
+			this.salary = salary;
+		}
+		void setHours(int hours_1){
+			this.hours = hours_1;
+		}
+		void setSalary(int salary_1){
+			this.salary = salary_1;
+		}
+		void Print(){
+			System.out.println(hours);
+			System.out.println(salary);
+			
+	}
+
+}

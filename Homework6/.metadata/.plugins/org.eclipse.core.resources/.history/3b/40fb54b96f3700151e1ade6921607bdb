@@ -1,0 +1,25 @@
+package Stock;
+
+public class Stock {
+
+	int price;
+	boolean available;
+	
+public Stock (){
+	this.price = 0;
+	this.available = true;
+}
+public Stock(int price, boolean available){
+	this.price = price;
+	this.available = available;
+}
+public void Add(String product){
+	Stock[] i = new Stock[10];
+}
+public boolean itIsAvailable(){
+	
+	return available;
+}
+	}
+
+
