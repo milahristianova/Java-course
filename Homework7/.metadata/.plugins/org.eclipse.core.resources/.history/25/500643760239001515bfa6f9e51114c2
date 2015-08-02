@@ -1,0 +1,36 @@
+package Person;
+
+public class SchoolTeacher extends Teacher {
+private String[] schoolClass = new String[5];
+public SchoolTeacher(){
+	super();
+	this.schoolClass = null;
+}
+public SchoolTeacher(String firstName, String lastName, int age, int yearsOfWork, String subject, String[] schoolClass){
+	super(firstName, lastName, age, yearsOfWork, subject);
+	setSchoolClass(schoolClass);
+}
+public String[] getSchoolClass() {
+	return schoolClass;
+}
+public void setSchoolClass(String[] schoolClass) {
+	this.schoolClass = schoolClass;
+}
+public void printSchoolClass(){
+	System.out.println("School classes:");
+		for(String string : schoolClass){
+			System.out.println(string + " ");
+		}
+		
+}
+		public void entertain(){
+			
+			System.out.println("I can entertain children.");
+			
+		}
+	
+}
+
+	
+
+

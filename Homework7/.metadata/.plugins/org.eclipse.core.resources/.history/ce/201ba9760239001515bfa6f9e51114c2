@@ -1,0 +1,21 @@
+package Person;
+
+public class CollegeTeacher extends Teacher {
+String college;
+public CollegeTeacher(){
+	super();
+	this.college = "";
+}
+public CollegeTeacher(String firstName, String lastName, int age, int yearsOfWork, String subject, String college){
+	super(firstName, lastName, age, yearsOfWork, subject);
+	setCollege(college);
+}
+public String getCollege() {
+	return college;
+}
+public void setCollege(String college) {
+	this.college = college;
+}
+
+}
+

@@ -1,0 +1,40 @@
+package Person;
+
+public class SchoolTeacher extends Teacher implements chekingHomework {
+private static String[] schoolClass = new String[5];
+public static SchoolTeacher schoolTeacher;
+public SchoolTeacher(){
+	super();
+	this.schoolClass = null;
+}
+public SchoolTeacher(String firstName, String lastName, int age, int yearsOfWork, String subject, String[] schoolClass){
+	super(firstName, lastName, age, yearsOfWork, subject);
+	setSchoolClass(schoolClass);
+}
+public String[] getSchoolClass() {
+	return schoolClass;
+}
+public void setSchoolClass(String[] schoolClass) {
+	this.schoolClass = schoolClass;
+}
+public static void printSchoolClass(){
+	System.out.println("School classes:");
+		for(String string : schoolClass){
+			System.out.println(string + " ");
+		}
+		
+}
+		public static void entertain(){
+			
+			System.out.println("I can entertain children.");
+			
+		}
+		public void chekingHomework() {
+			System.out.println("Chek Homework");
+		}
+	
+}
+
+	
+
+

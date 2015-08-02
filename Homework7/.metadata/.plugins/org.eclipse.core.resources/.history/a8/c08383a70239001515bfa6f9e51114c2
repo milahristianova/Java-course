@@ -1,0 +1,67 @@
+package Person;
+
+public class Test {
+
+	public static void main(String[] args) {
+		System.out.println();
+		System.out.println("Lecturer: ");
+		Lecturer lecturer = new Lecturer("Vasil", "Ivanov",48, 7, "UNSS");
+		lecturer.sayHello();
+		lecturer.chekingHomework();
+		lecturer.printLectures();
+		lecturer.exercises(7,"Finance");
+		System.out.println();
+		lecturer.exercises(2, "Microeconomics");
+		System.out.println();
+		System.out.println();
+		
+		System.out.println();
+		System.out.println("Teacher: ");
+		Teacher teacher = new Teacher("Martin" , "Petrov",35, 5, "Math");
+		teacher.sayHello();
+		System.out.println();
+		teacher.chekingHomework();
+		System.out.println();
+		
+		System.out.println();
+		System.out.println("School teacher:");
+		String[] array = {"5b","6d","8a","7v","5a"};
+		SchoolTeacher.schoolTeacher = new SchoolTeacher("Mariya", "Dimitrova",38, 6, "Geography", array);
+		SchoolTeacher.printSchoolClass();
+		SchoolTeacher.entertain();
+		SchoolTeacher.chekingHomework();
+		
+		System.out.println();
+		System.out.println("College teacher: ");
+		CollegeTeacher collegeTeacher = new CollegeTeacher("Jivko", "Mitev",29, 8, "Biology", "Sofiq University");
+		collegeTeacher.chekingHomework();
+		collegeTeacher.writeAnArticle();
+		
+		System.out.println();
+		System.out.println("Professor: ");
+		Professor professor = new Professor("Ivan", "Petrov",45, 9, "UNSS", "Docent");
+		professor.getTitle();
+		professor.exams();
+		professor.chekingHomework();
+		
+		System.out.println();
+		System.out.println("Assistant2: ");
+		
+		Asisstant assistant = new Asisstant("Mario", "Kasabov", 28, 3, "UNSS", false);
+	    
+	    assistant.chekingHomework();
+		assistant.chekingExams();
+		assistant.writeAnArticle();
+		
+		System.out.println();
+		System.out.println("There are " +Person.count  + " instances made !");
+		
+		
+		
+	
+		
+		
+		
+	
+	}
+}

@@ -1,0 +1,50 @@
+package Person;
+
+public abstract class Person {
+
+	protected String firstName;
+protected String lastName;
+protected int age;
+protected int yearsOfWork;
+
+public Person(){
+	firstName = "";
+	lastName = "";
+	age = 0;
+	yearsOfWork = 0;
+}
+public Person(String firstName, String lastName, int age, int yearsOfWokr){
+	
+}
+public String getFirstName() {
+	return firstName;
+}
+public void setFirstName(String firstName) {
+	this.firstName = firstName;
+}
+public String getLastName() {
+	return lastName;
+}
+public void setLastName(String lastName) {
+	this.lastName = lastName;
+}
+public int getAge() {
+	return age;
+}
+public void setAge(int age) {
+	this.age = age;
+}
+public int getYearsOfWork() {
+	return yearsOfWork;
+}
+public void setYearsOfWork(int yearsOfWork) {
+	this.yearsOfWork = yearsOfWork;
+}
+public void sayHello(){
+	if (this.yearsOfWork < 0){
+		System.out.println("I am " + this.firstName + " " + this.lastName + "I'm " + this.age + ".I have been working for ??? years.");	
+	}else {
+		System.out.println("I am " + this.firstName + " " + this.lastName + "I'm  " + this.age +  ".I have been working for "+ this.yearsOfWork + " years. ");
+	}
+}
+}

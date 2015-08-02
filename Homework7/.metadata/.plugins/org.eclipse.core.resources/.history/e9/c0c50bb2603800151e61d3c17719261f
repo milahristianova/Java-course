@@ -1,0 +1,33 @@
+package Person;
+
+public class Lecturer extends Person  {
+private String nameOfUnivesity;
+private static final int lectures = 10;
+
+
+public Lecturer(){
+super();
+this.nameOfUnivesity = "";
+}
+public Lecturer (String firstName, String lastName, int age, int yearsOfWork, String nameOfUniversity ){
+	super(firstName, lastName, age, yearsOfWork);
+	setNameOfUnivesity(nameOfUniversity);
+}
+public String getNameOfUnivesity() {
+	return nameOfUnivesity;
+}
+public void setNameOfUnivesity(String nameOfUnivesity) {
+	this.nameOfUnivesity = nameOfUnivesity;
+}
+public void Cheking(){
+	System.out.println("Cheking Homewokr!");
+}
+public void goodDay(){
+	System.out.println ("Good afternoon!");
+}
+public void printLectures(){
+	System.out.println("Max lectures " + lectures);
+	
+	
+}
+}
