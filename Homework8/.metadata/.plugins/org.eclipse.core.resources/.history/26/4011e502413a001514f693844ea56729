@@ -1,0 +1,10 @@
+package Account;
+
+public class Account {
+public Account(String nameOfTheFirm, long bulstat) {
+		// TODO Auto-generated constructor stub
+	}
+
+private double Sum;
+
+}

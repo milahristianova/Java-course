@@ -1,0 +1,12 @@
+package Account;
+
+public class NonValidException extends Exception {
+public NonValidExeption(){
+	super();
+}
+public NonValidException(String message){
+	super(message);
+}
+
+}
+

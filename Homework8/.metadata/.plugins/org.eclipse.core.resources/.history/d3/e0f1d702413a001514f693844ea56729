@@ -1,0 +1,36 @@
+package Account;
+
+public class CoorporativeAccount extends Account {
+protected String nameOfTheFirm;
+protected long bulstat;
+
+public CoorporativeAccount(String nameOfTheFirm, long bulstat) throws Exception{
+	super(nameOfTheFirm, bulstat);
+	this.nameOfTheFirm = nameOfTheFirm;
+	this.bulstat = bulstat;
+	setNameOfTheFirm(nameOfTheFirm);
+	setBulstat(bulstat);
+	
+}
+
+public String getNameOfTheFirm() {
+	return nameOfTheFirm;
+}
+
+public void setNameOfTheFirm(String nameOfTheFirm) {
+	this.nameOfTheFirm = nameOfTheFirm;
+}
+
+public long getBulstat() {
+	return bulstat;
+}
+
+public void setBulstat(long bulstat) {
+	this.bulstat = bulstat;
+}
+
+}
+	
+
+
+
