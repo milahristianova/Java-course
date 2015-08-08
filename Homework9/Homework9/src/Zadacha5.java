@@ -1,0 +1,32 @@
+
+import java.util.Scanner;
+
+
+public class Zadacha5 {
+
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		
+		System.out.println("Enter :");
+		String text=scanner.nextLine();
+       int a=text.length();
+       int count=0;
+       int count1=0;
+       for(int b=0;b<a;b++){
+    	   if(text.charAt(b)=='('){
+    		   count++;
+    	   }
+    	   if(text.charAt(b)==')'){
+    		   count1++;
+    	   }
+       }
+       if(count==count1){
+    	   System.out.println(text+" true");
+       }
+       else{
+    	   System.out.println(text+" false");
+       }
+     
+	}
+
+}

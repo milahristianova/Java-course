@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Zadacha5 {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter a math task : ");
+		String word = scanner.nextLine();
+		int count = 0;
+		int count_1 = 0;
+		String[] parts = word.split("");
+		for(int i = 0; i<parts.length; i++){
+			if(parts[i].equals("(")){
+				count++;
+			}if (parts[i].equals("(")){
+				count_1++;
+			}
+			if (count == count_1){
+			 System.out.println("True");
+			 
+			}
+			if (count != count_1){
+				System.out.println("False");
+			
+			}
+		}
+	}
+
+}

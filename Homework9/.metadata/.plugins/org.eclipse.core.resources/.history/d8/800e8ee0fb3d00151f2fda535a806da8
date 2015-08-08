@@ -1,0 +1,35 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.util.Scanner;
+
+public class Zadacha2_otlekciqta {
+
+	public static void main(String[] args) {
+	Scanner scanner = new Scanner(System.in);
+	try {
+		FileReader fileReader = new FileReader("countries.txt");
+		BufferedReader bufferedReader = new BufferedReader(fileReader);
+		FileWriter fileStream = new FileWriter("cities.txt");
+		BufferedWriter writer = new BufferedWriter(fileStream);
+		
+		while(bufferedReader.ready()) {
+			String line = bufferedReader.readLine();
+			System.out.println("What is the Capital of  " + " ? " + line );
+			String text = scanner.nextLine();
+			writer.write(text);
+			writer.newLine();
+		}
+		writer.close();
+		
+	}catch(Exception e) {
+		System.out.println("Error!");
+		System.out.println(e.getMessage());
+		System.exit(0);
+		}
+		
+	}
+	}
+
+}

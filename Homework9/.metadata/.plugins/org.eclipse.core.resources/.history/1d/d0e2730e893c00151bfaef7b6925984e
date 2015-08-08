@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Zadacha3 {
+
+	public static void main(String[] args) {
+	Scanner scanner = new Scanner(System.in);
+	System.out.println("Enter a word for searching : ");
+	String word = scanner.nextLine();
+	System.out.println("Enter a text: ");
+	String text = scanner.nextLine();
+	int counter = 0;
+	String[] parts = text.split(" ");
+	for(String part : parts){
+		if(part.equals(word)){
+			counter++;
+		}
+		System.out.println(counter);
+		
+		}
+	}
+
+}

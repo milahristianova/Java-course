@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Zadacha1 {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter a word : ");
+		String word = scanner.nextLine();
+		StringBuilder sb = new StringBuilder();
+		for (int i = word.length() - 1; i >= 0; i -- ){
+			sb.append(word.charAt(i));
+		}
+		System.out.println(sb.toString());
+		
+		}
+	}
+	
+
+
