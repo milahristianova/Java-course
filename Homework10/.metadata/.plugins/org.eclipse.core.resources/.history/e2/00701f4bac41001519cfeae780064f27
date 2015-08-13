@@ -1,0 +1,40 @@
+package Zadacha4;
+
+public class Book {
+ protected String nameOfBook;
+ protected String autor;
+ protected int page;
+public String getNameOfBook() {
+	return nameOfBook;
+}
+public void setNameOfBook(String nameOfBook) {
+	this.nameOfBook = nameOfBook;
+}
+public String getAutor() {
+	return autor;
+}
+public void setAutor(String autor) {
+	this.autor = autor;
+}
+public int getPage() {
+	return page;
+}
+public void setPage(int page) {
+	this.page = page;
+}
+ public Book(String nameOfBook, String autor, int page){
+	 super();
+	 setNameOfBook(nameOfBook);
+	 setAutor(autor);
+	 setPage(page);
+ }
+ public Book(){
+	 super();
+ }
+ public String toString(){
+	 return this.nameOfBook + "" + this.autor + "" + this.page;
+ }
+ 
+ }
+ 
+

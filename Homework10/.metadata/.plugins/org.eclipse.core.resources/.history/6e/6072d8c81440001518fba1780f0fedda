@@ -1,0 +1,36 @@
+package Zadacha4;
+
+import java.util.ArrayList;
+import java.util.TreeMap;
+public class Test {
+
+	public static void main(String[] args) {
+		Books book_1 = new Books("Rich man,poor man", "Jrwin Shou" , 450);
+		Books book_2 = new Books("Grey", "E.L.James", 300 );
+		
+		ArrayList<Books> list_1 = new ArrayList<>();
+		list_1.add(book_1);
+		ArrayList<Books> list_2 = new ArrayList<>();
+		list_2.add(book_2);
+		
+		
+		TreeMap<String, ArrayList<Books>> map_1 = new TreeMap<>();
+		map_1.put("Rich man, poor man", list_1);
+		map_1.put("Grey", list_2);
+		
+		
+		Library first = new Library("Dora Gabe", "Dobrich", map_1);
+		System.out.println(first);
+		
+		first.addCopy("Rich man, poor man");	
+		first.addCopy("Rich man, poor man");
+		first.removeCopy("Rich man, poor man");
+		first.addCopy("Grey");
+		first.removeCopy("Grey");
+		first.removeCopy("Grey");
+		first.addCopy("Classic stories");
+		first.removeCopy("Reading minds");
+		
+		System.out.println(first);
+	}
+}

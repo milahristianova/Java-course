@@ -1,0 +1,66 @@
+package Zadacha4;
+
+
+import java.util.ArrayList;
+public class Library {
+	String nameOfLibrary;
+	String adress;
+	ArrayList<Book>collection=new ArrayList<Book>();
+
+	public Library(String nameOfLibrary, String adress,ArrayList<Book>collection) {
+		super();
+		setnameOfLibrary(nameOfLibrary);
+		setAddress(adress);
+		setBooks(collection);
+	}
+
+	public String getnameOfLibrary() {
+		return nameOfLibrary;
+	}
+
+	public void setnameOfLibrary(String nameOfLibrary) {
+		this.nameOfLibrary = nameOfLibrary;
+	}
+
+	public String getAdress() {
+		return adress;
+	}
+
+	public void setAddress(String adress) {
+		this.adress = adress;
+	}
+
+	
+
+	public ArrayList<Book> getCollection() {
+		return collection;
+	}
+
+	public void setCollection(ArrayList<Book> collection) {
+		this.collection = collection;
+	}
+
+	public void setBooks(ArrayList<Book> colection) {
+		this.collection = colection;
+	}
+	
+	public void addBook(Book b){
+		collection.add(b);
+	}
+
+
+	public void remove(String name) {
+		collection.remove(name);
+	}
+	public void print(){
+		System.out.println("Name of library " + nameOfLibrary);
+		System.out.println("Adress of library: " + adress);
+		System.out.println("Book collection: ");
+		for (int i = 0; i < collection.size(); i++) {
+			System.out.println("Name of book: " + collection.get(i).getNameOfBook());
+			System.out.println("Author of the book: " + collection.get(i).getAutor());
+			System.out.println("Pages of the book: " + collection.get(i).getPage());
+	}
+	}
+}
+

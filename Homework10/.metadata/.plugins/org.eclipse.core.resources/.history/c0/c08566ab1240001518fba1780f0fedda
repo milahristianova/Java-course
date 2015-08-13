@@ -1,0 +1,79 @@
+package Zadacha4;
+
+import java.awt.print.Book;
+import java.util.ArrayList;
+import java.util.TreeMap;
+
+public class Library {
+private String name;
+private String adress;
+private TreeMap<String, ArrayList<Book>> collection = new TreeMap<String,ArrayList<Book>>();
+
+public Library(String name, String location, TreeMap<String, ArrayList<Books>> map_1) {
+	super();
+	this.name = name;
+	this.adress = adress;
+	this.collection = collection;
+}
+
+public String getName() {
+	return name;
+}
+
+public void setNameOfLibrary(String name) {
+	this.name = name;
+}
+
+public String getAdress() {
+	return adress;
+}
+
+public void setAdress(String Adress) {
+	this.adress = adress;
+}
+
+public TreeMap<String, ArrayList<Book>> getCollection() {
+	return collection;
+}
+
+public void setColectionOfBooks(TreeMap<String, ArrayList<Book>> collection) {
+	this.collection = collection;
+}
+
+public void addCopy(String name){
+	if(collection.containsKey(name)){
+		ArrayList<Book> list = collection.get(name);
+		if(list.size() != 0){
+			Book book = list.get(0);
+			Book newBook = book;
+			list.add(newBook);
+			System.out.println("One copy!");
+		} else{
+			System.out.println("Empty!");
+		}
+	} else{
+		System.out.println("There isn't a book with this name!");
+	}
+}
+
+public void removeCopy(String name){
+	if(collection.containsKey(name)){
+		ArrayList<Book> list = collection.get(name);
+		if(list.size() != 1){
+			list.remove(list.size()-1);
+			System.out.println("Copy was removed!");
+		} else{
+			System.out.println("There is no copy!");
+		}
+	} else{
+		System.out.println("There isn't a book with this name!");
+	}
+}
+
+@Override
+public String toString() {
+	return "Library: name - " + name + ", adress - " + adress + ", collection: "
+			+ collection;
+}
+}
+

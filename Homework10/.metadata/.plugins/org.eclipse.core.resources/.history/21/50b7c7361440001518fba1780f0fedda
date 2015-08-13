@@ -1,0 +1,68 @@
+package Zadacha4;
+
+public class Book {
+ protected String nameOfBook;
+ protected String autor;
+ protected int page;
+ 
+ public Books(){
+	 this.nameOfBooks="";
+	 this.autor="";
+	 this.page=0;
+ }
+ public Books(String nameOfBooks,String autor,int page){
+	 this.nameOfBooks=nameOfBooks;
+	 this.autor=autor;
+	 this.page=page;
+ }
+public String getNameOfBooks() {
+	return nameOfBooks;
+}
+public void setNameOfBooks(String nameOfBooks) {
+	this.nameOfBooks = nameOfBooks;
+}
+public String getAutor() {
+	return autor;
+}
+public void setAutor(String autor) {
+	this.autor = autor;
+}
+public int getPage() {
+	return page;
+}
+public void setPage(int page) {
+	this.page = page;
+}
+ 
+
+@Override
+public String toString() {
+	return "Books: name - " + nameOfBooks + ", autor - " + autor + ", pages - " + page;
+}
+
+@Override
+public int hashCode() {
+	return (this.nameOfBooks + this.autor + this.page).hashCode();
+}
+
+@Override
+public boolean equals(Object object) {
+	 if(object == null){
+	    	return false;
+	    }
+	    
+	    if(!(object instanceof Books)){
+	    	return false;
+	    }
+
+	    Books book = (Books) object;
+	    return this.hashCode() == book.hashCode();
+}
+
+
+
+
+
+}
+
+

@@ -1,0 +1,10 @@
+package Zadachi_ot_lekciqta;
+
+public class Town {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

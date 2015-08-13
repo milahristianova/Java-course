@@ -1,0 +1,76 @@
+package Zadacha4;
+
+
+import java.util.ArrayList;
+import java.util.TreeMap;
+public class Library {
+	String nameOfLibrary;
+	String adress;
+	ArrayList<Book> collection=new ArrayList<Book>();
+	
+	public Library(String nameOfLibrary, String adress,TreeMap<String, ArrayList<Book>> treeMap) {
+		super();
+		setnameOfLibrary(nameOfLibrary);
+		setAddress(adress);
+		setBooks(treeMap);
+	}
+
+	public String getnameOfLibrary() {
+		return nameOfLibrary;
+	}
+
+	public void setnameOfLibrary(String nameOfLibrary) {
+		this.nameOfLibrary = nameOfLibrary;
+	}
+
+	public String getAdress() {
+		return adress;
+	}
+
+	public void setAddress(String adress) {
+		this.adress = adress;
+	}
+
+	
+
+	public ArrayList<Book> getCollection() {
+		return collection;
+	}
+
+	public void setCollection(ArrayList<Book> collection) {
+		this.collection = collection;
+	}
+
+	public void setBooks(TreeMap<String, ArrayList<Book>> treeMap) {
+		this.collection = treeMap;
+	}
+	
+	public void addBook(Book b){
+		collection.add(b);
+	}
+
+
+	public void remove(String name) {
+		collection.remove(name);
+	}
+
+	public String toString() {
+		return "Library-> " + nameOfLibrary + "| address-> " + adress + "| books-> " + collection;
+	}
+
+	public void addBook(String name, String autor, int pages) {
+
+		Book book = new Book(name, autor, pages);
+		collection.add(book);
+	}
+
+	public void removeBook(String name) {
+		for (Book book : collection) {
+			if (book.getNameOfBook().equals(name)) {
+				collection.remove(book);
+			}
+		}
+	}
+
+}
+

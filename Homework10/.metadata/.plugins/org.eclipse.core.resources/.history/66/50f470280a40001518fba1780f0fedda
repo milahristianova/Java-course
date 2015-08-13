@@ -1,0 +1,56 @@
+import java.awt.print.Book;
+import java.util.ArrayList;
+
+public class Library {
+private String name;
+private String adress;
+private ArrayList<Book>books = new ArrayList<Book>();
+
+public Library(){
+	super();
+}
+public Library(String name, String adress, ArrayList<Book>books){
+	super();
+	this.name = name;
+	this.adress = adress;
+	this.books = books;
+}
+public void addBook(Book temp){
+	books.add(temp);
+}
+public void removeBook(Book temp){
+	books.remove(temp);
+}
+public void print(){
+	System.out.print(name);
+	System.out.print(adress);
+	System.out.println();
+
+	 for(int i=0;i<books.size();i++){
+  	   ArrayList<Book> book;
+//	System.out.println(book.get(i).getAutor());
+  //	   System.out.println(book.get(i).getName());
+  	//   System.out.println(book.get(i).getPage());
+}
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public String getAdress() {
+	return adress;
+}
+public void setAdress(String adress) {
+	this.adress = adress;
+}
+public ArrayList<Book> getBooks() {
+	return books;
+}
+public void setBooks(ArrayList<Book> books) {
+	this.books = books;
+}
+
+}
+

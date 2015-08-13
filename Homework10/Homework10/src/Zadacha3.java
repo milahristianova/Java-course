@@ -1,0 +1,42 @@
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeMap;
+
+public class Zadacha3 {
+
+	public static void main(String[] args) {
+	Scanner scanner = new Scanner(System.in);
+	System.out.println("Please enter your cards: ");
+	String string = scanner.nextLine();
+	String[] words = string.split(" ");
+	TreeMap<String, Integer> wordsCounter = new TreeMap <String, Integer>();
+	for(String word : words){
+		Integer counter = wordsCounter.get(word);
+		if(counter == null){
+			counter = 0;
+		}if (word.equals("2") || word.equals("3") || word.equals("4") || word.equals("5") || word.equals("6") || word.equals("7") || word.equals("8") || word.equals("9") || word.equals("10") || word.equals("J") || word.equals("Q") || word.equals("K") || word.equals("A")){
+			System.out.println("Valid cards!");
+		
+		}else{
+			System.out.println("Invalid cards!");
+		
+		}
+		wordsCounter.put(word, counter + 1);
+	}
+	Set<String> wordKey = wordsCounter.keySet();
+	for(String word : wordKey){
+		int counter = wordsCounter.get(word);
+		if(counter == 2){
+			System.out.println("Pair!");
+			System.out.println();
+		}if(counter == 3){
+			System.out.println("Set!");
+			System.out.println();
+		}if (counter == 4){
+			System.out.println("Four of kind!");
+			
+		}
+	}
+	}
+
+}
