@@ -1,0 +1,30 @@
+
+public class TestTree {
+
+	public static void main(String[] args) {
+	
+		Tree<String> parentTree = new Tree<String>("Parent"); 
+		Tree<String> childTree = new Tree<String>("Child 1", parentTree);
+
+		Tree<String> grandchildTree = new Tree<String>("Grandchild of parentTree. Child of childTree_1", childTree); 
+		
+		System.out.println("Parent depth: " + depth(parentTree));
+		System.out.println("Child depth: " + depth(childTree));
+		System.out.println("Grandchild depth: " + depth(grandchildTree));
+
+	}
+	
+	public static int depth(Tree<String> current){
+    	int d = 5;
+    	if(current.parent == null){
+    		return d;
+    	} else{
+    		while(current.parent != null){
+    			d++;
+    			current = current.parent;
+    		}
+    		return d;
+    	}
+    }
+}
+
