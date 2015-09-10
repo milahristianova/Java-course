@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Matrix {
+
+	public static void main(String[] args) {
+	Scanner scanner = new Scanner(System.in);
+	System.out.println("Please enter a number from 2 to 9: ");
+	
+	 int m, n, c, d = 0;
+	m = scanner.nextInt();
+     
+	n  = scanner.nextInt();
+ 
+      int first[][] = new int[m][n];
+      int second[][] = new int[m][n];
+      int sum[][] = new int[m][n];
+ 
+      System.out.println("Enter the elements of first matrix");
+ 
+      for (  c = 0 ; c < m ; c++ )
+         for ( d = 0 ; d < n ; d++ )
+            first[c][d] = scanner.nextInt();
+      System.out.print(first[c][d]+"\t");
+
+
+
+
+	}
+
+
+      }
+      
+      

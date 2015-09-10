@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Matrix {
+
+	public static void main(String[] args) {
+	Scanner scanner = new Scanner(System.in);
+	System.out.println("Please enter a number from 2 to 9: ");
+	int numbers [][] = new int [3][3];
+	
+	numbers[0][0] = 1;
+	numbers[0][1] = 2;
+	numbers[0][2] = 24;
+	numbers[1][0] = 4;
+	numbers[1][1] = 5;
+	numbers[1][2] = 32;
+	numbers[2][0] = 14;
+	numbers[2][1] = 7;
+	numbers[2][2] = 19;
+System.out.println(numbers);
+
+ 	}
+
+}

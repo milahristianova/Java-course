@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Test extends Matrixx {
+	public static void main(String[] args){
+		
+	}
+	public static void outputArray(int[][] array) {
+        int sum= 0;
+        int rowSize = array.length;
+        int columnSize = array[0].length;
+        System.out.println("rows=" + rowSize + "cols=" + columnSize);
+
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[0].length; j++) {
+                sum += array[i][j];
+            }
+            System.out.println("Print the sum of rows = " + sum);
+        }
+        for (int i = 0; i < array.length; i++) {
+            sum = 0;
+            int j = 0;
+			sum = sum + array[i][j];
+        }
+	}
+}

@@ -1,0 +1,15 @@
+
+public class Test extends Matrixx {
+	{
+	int[][] array = null;
+	
+	for (int i = 0; i < array.length; i++) {
+        int sum = 0;
+        int j = 0;
+		
+		sum = sum + array[i][j];
+		System.out.println(sum);;
+		
+	}
+}
+}
